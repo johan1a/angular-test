@@ -9,17 +9,17 @@ deploy:
     slot: web-app-test2-prod
     on: master
 
-    - provider: azure_web_apps
+  - provider: azure_web_apps
     verbose: true
     slot: web-app-test2-test
     on: test  
 
-    - provider: azure_web_apps
+  - provider: azure_web_apps
     verbose: true
     slot: web-app-test2-dev
     on: dev
-    
-    - provider: azure_web_apps
+  
+  - provider: azure_web_apps
     verbose: true
     slot: web-app-test2-all
     on: 
