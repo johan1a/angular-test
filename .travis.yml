@@ -6,5 +6,5 @@ script:
 deploy:
   - provider: azure_web_apps
     verbose: true
-    slot: dev
+    slot: web-app-test2-dev
 
