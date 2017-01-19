@@ -1,6 +1,8 @@
 language: node_js
 node_js:
   - "6"
+script:
+  - echo "Testing..."
 deploy:
   - provider: azure_web_apps
     slot: staging
