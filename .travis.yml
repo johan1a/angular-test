@@ -1,0 +1,7 @@
+deploy:
+    - provider: azure_web_apps
+        slot: staging
+              on: staging
+    - provider: azure_web_apps
+        slot: myapp-develop
+
