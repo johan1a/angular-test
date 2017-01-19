@@ -6,5 +6,5 @@ script:
 deploy:
   - provider: azure_web_apps
     verbose: true
-    slot: develop
+    slot: dev
 
