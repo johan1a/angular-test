@@ -4,7 +4,7 @@ node_js:
 script:
   - echo "Testing..."
 deploy:
-  skip_cleanup: true
   - provider: azure_web_apps
+    skip_cleanup: true
     slot: myapp-develop
 
