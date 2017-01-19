@@ -5,6 +5,7 @@ script:
   - echo "Testing..."
 deploy:
   - provider: azure_web_apps
+    verbose: true
     #skip_cleanup: true
     slot: myapp-develop
 
