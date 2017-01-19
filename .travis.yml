@@ -9,12 +9,12 @@ language: node_js
 node_js:
   - "6"
 script:
-  - echo "Testing..."
+  - echo "Test your application here..."
 deploy:
   - provider: azure_web_apps
     verbose: true
-    slot: $AZURE_WA_SITE-prod
-    on: master
+    slot: $AZURE_WA_SITE-prod # Will deploy to a slot called 'prod'
+    on: master # From the master branch
 
   - provider: azure_web_apps
     verbose: true
