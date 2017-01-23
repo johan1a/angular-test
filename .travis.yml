@@ -12,6 +12,9 @@ script:
   - echo "Test your application here..."
 deploy:
   - provider: azure_web_apps
+    verbose: true
+
+  - provider: azure_web_apps
     slot: $AZURE_WA_SITE-prod # Will deploy to a slot called 'prod'
     on: master # From the master branch
 
@@ -22,10 +25,3 @@ deploy:
   - provider: azure_web_apps
     slot: $AZURE_WA_SITE-dev
     on: dev
-
-  - provider: azure_web_apps
-    slot: $AZURE_WA_SITE-doesnotexist
-    on: master
-  
-
-    
